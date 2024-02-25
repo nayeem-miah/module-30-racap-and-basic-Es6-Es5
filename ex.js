@@ -56,8 +56,9 @@ console.log('the number squre then sum and then average is :',ava);
 const maxNumber = arr => Math.max(...arr);
 const numbers = [12,3,4,56];
 const numbers2 = [64,52,234];
-const join = numbers.concat(numbers2);
-console.log(join);
-const num2 = maxNumber((join));
-console.log(num2);
+let newArray = [...numbers,...numbers2]
+// const join = numbers.concat(numbers2);
+console.log(newArray);
+const max = maxNumber((newArray));
+console.log('max numbers  is :',max);
 
